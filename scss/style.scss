@@ -150,7 +150,7 @@ body {
 .header {
   position: relative; /* Aby pseudo-element odnosił się do kontenera */
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("./images/car.jpg");
+    url("/images/car.jpg");
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -334,14 +334,14 @@ body {
     }
     .aboutus-images-container {
       display: flex;
-      flex-direction: row; /* Images side by side */
-      justify-content: space-between; /* Add spacing between images */
-      gap: 2rem; /* Optional: Space between images */
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 2rem;
     }
 
     .aboutus-image1 {
-      width: 50%; /* Each image takes 50% of the container width */
-      height: auto; /* Maintain aspect ratio */
+      width: 50%;
+      height: auto;
     }
 
     .aboutus-text {
@@ -387,7 +387,7 @@ body {
 
 .stats {
   display: flex;
-  flex-direction: column; /* Stack vertically by default */
+  flex-direction: column;
   align-items: flex-start;
   padding: 2em 6em;
   background-color: #f2f2f2;
@@ -425,17 +425,16 @@ body {
   }
 }
 
-/* For larger screens: display stats in a single row */
 @media (min-width: 1000px) {
   .stats {
-    flex-direction: row; /* Change layout to horizontal */
-    justify-content: space-between; /* Distribute items evenly */
-    align-items: center; /* Align items vertically */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .stats-item {
-    margin-bottom: 0; /* Remove bottom margin since items are side by side */
-    flex-direction: row; /* Ensure horizontal alignment */
+    margin-bottom: 0;
+    flex-direction: row;
   }
   .stats-number {
     font-size: 30px;
@@ -444,15 +443,15 @@ body {
 .offertContainer {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; // Wyrównanie do prawej strony
-  text-align: right; // Wyrównanie tekstu do prawej
+  align-items: flex-end;
+  text-align: right;
   padding: 2rem;
   margin-top: 2rem;
   animation: fadeInRight 1s ease-out forwards;
   &-text {
     font-size: 12px;
     font-weight: 500;
-    color: rgba(255, 0, 0, 0.857); // Czerwony kolor
+    color: rgba(255, 0, 0, 0.857);
     text-transform: uppercase;
     margin-bottom: 0.5rem;
   }
@@ -460,14 +459,14 @@ body {
   &-dsc {
     font-size: 28px;
     font-weight: bold;
-    color: #000000; // Czarny kolor
+    color: #000000;
     margin-bottom: 1.5rem;
   }
 
   &-btn {
     display: inline-block;
-    background-color: #ffd226; // Żółty kolor
-    color: #000000; // Czarny kolor tekstu
+    background-color: #ffd226;
+    color: #000000;
     font-size: 16px;
     font-weight: 500;
     padding: 0.75rem 1.5rem;
@@ -478,24 +477,21 @@ body {
     text-align: center;
 
     &:hover {
-      background-color: #e6b022; // Ciemniejszy żółty na hover
+      background-color: #e6b022;
     }
   }
 }
 
 .cards-container {
   display: grid;
-  grid-template-columns: 1fr; /* Default: single column for small screens */
-  gap: 2rem; /* Spacing between cards */
+  grid-template-columns: 1fr;
+  gap: 2rem;
   margin: 2rem 1rem;
 }
 @media (min-width: 1000px) {
   .cards-container {
-    grid-template-columns: repeat(
-      3,
-      1fr
-    ); /* Three columns for larger screens */
-    gap: 2rem; /* Maintain spacing between cards */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
   }
 }
 .card {
@@ -536,7 +532,7 @@ body {
 
 .hero-section {
   position: relative;
-  background-image: url("/images/Porshe.png"); // Ścieżka do obrazu
+  background-image: url("/images/Porshe.png");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -548,7 +544,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); // Ciemna nakładka dla lepszego kontrastu
+    background: rgba(0, 0, 0, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -635,7 +631,7 @@ body {
       padding: 0;
       margin: 0;
       display: flex;
-      flex-wrap: wrap; /* Allow wrapping for smaller screens */
+      flex-wrap: wrap;
       gap: 2rem;
 
       li {
@@ -643,7 +639,7 @@ body {
         align-items: flex-start;
         gap: 1rem;
         margin-bottom: 1.5rem;
-        flex: 1 1 calc(33% - 2rem); /* Three items per row on large screens */
+        flex: 1 1 calc(33% - 2rem);
 
         .icon {
           font-size: 24px;
@@ -668,27 +664,32 @@ body {
     }
   }
 
-  /* Responsive layout for larger screens */
   @media (min-width: 1000px) {
     .why-us-container {
       display: grid;
-      grid-template-columns: 1fr 1fr; /* Two columns: image + content */
+      grid-template-columns: 1fr 1fr;
       align-items: start;
       gap: 2rem;
 
       .why-us-image {
-        margin-bottom: 0; /* Remove bottom margin for grid alignment */
+        margin-bottom: 0;
       }
     }
 
     .why-us-features {
-      gap: 2rem;
+      gap: 1rem;
       margin-top: 2rem;
 
       li {
-        flex: 1 1 30%; /* Three items per row on large screens */
+        flex: 1 1 30%;
       }
     }
+  }
+}
+@media (max-width: 576px) {
+  .why-us-features {
+    display: flex;
+    flex-direction: column;
   }
 }
 .contact-section {
@@ -744,7 +745,7 @@ body {
     }
 
     .contact-details {
-      list-style: none; // Usuwa punkty listy
+      list-style: none;
       padding: 0;
       margin-bottom: 2rem;
 
@@ -781,17 +782,16 @@ body {
     }
 
     #map {
-      width: 100%; // Pełna szerokość rodzica
-      max-width: 800px; // Maksymalna szerokość
-      height: 180px; // Wysokość mapy
-      border: 0; // Usunięcie obramowania
-      margin: 0 auto; // Centrowanie mapy
-      display: block; // Blokowy element
+      width: 100%;
+      max-width: 800px;
+      height: 180px;
+      border: 0;
+      margin: 0 auto;
+      display: block;
     }
   }
 }
 
-// Animacje pojawiania się elementów
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -834,34 +834,30 @@ body {
     transform: translateX(0);
   }
 }
-// Ukrywanie elementów przed animacją
+
 .hidden {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-// Efekt dla zdjęć i tekstów
 .fade-in {
   opacity: 0;
   transition: opacity 1s ease, transform 1s ease;
   transform: translateY(30px);
 }
 
-// Efekt dla kart (wyjeżdżają z lewej)
 .card {
   opacity: 0;
   transform: translateX(-50px);
   transition: transform 1s ease-out, opacity 1s ease-out;
 }
 
-// Pojawianie się po wejściu w widoczność
 .show {
   opacity: 1;
   transform: translateY(0);
 }
 
-// Efekt hover na przyciskach
 button {
   transition: transform 0.3s ease;
   &:hover {

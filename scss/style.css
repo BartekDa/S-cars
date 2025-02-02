@@ -142,7 +142,7 @@ body {
 }
 .header {
   position: relative; /* Aby pseudo-element odnosił się do kontenera */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/car.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/car.jpg");
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -307,13 +307,13 @@ body {
   }
   .container .aboutus-images-container {
     display: flex;
-    flex-direction: row; /* Images side by side */
-    justify-content: space-between; /* Add spacing between images */
-    gap: 2rem; /* Optional: Space between images */
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
   }
   .container .aboutus-image1 {
-    width: 50%; /* Each image takes 50% of the container width */
-    height: auto; /* Maintain aspect ratio */
+    width: 50%;
+    height: auto;
   }
   .container .aboutus-text {
     font-size: 40px;
@@ -351,7 +351,7 @@ body {
 
 .stats {
   display: flex;
-  flex-direction: column; /* Stack vertically by default */
+  flex-direction: column;
   align-items: flex-start;
   padding: 2em 6em;
   background-color: #f2f2f2;
@@ -384,16 +384,15 @@ body {
   margin: 0 1rem;
 }
 
-/* For larger screens: display stats in a single row */
 @media (min-width: 1000px) {
   .stats {
-    flex-direction: row; /* Change layout to horizontal */
-    justify-content: space-between; /* Distribute items evenly */
-    align-items: center; /* Align items vertically */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
   .stats-item {
-    margin-bottom: 0; /* Remove bottom margin since items are side by side */
-    flex-direction: row; /* Ensure horizontal alignment */
+    margin-bottom: 0;
+    flex-direction: row;
   }
   .stats-number {
     font-size: 30px;
@@ -439,15 +438,15 @@ body {
 
 .cards-container {
   display: grid;
-  grid-template-columns: 1fr; /* Default: single column for small screens */
-  gap: 2rem; /* Spacing between cards */
+  grid-template-columns: 1fr;
+  gap: 2rem;
   margin: 2rem 1rem;
 }
 
 @media (min-width: 1000px) {
   .cards-container {
-    grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
-    gap: 2rem; /* Maintain spacing between cards */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
   }
 }
 .card {
@@ -538,7 +537,6 @@ body {
 .why-us {
   padding: 2rem;
   font-family: "Poppins", sans-serif;
-  /* Responsive layout for larger screens */
 }
 .why-us .why-us-container {
   display: flex;
@@ -575,7 +573,7 @@ body {
   padding: 0;
   margin: 0;
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  flex-wrap: wrap;
   gap: 2rem;
 }
 .why-us .why-us-container .why-us-features li {
@@ -583,7 +581,7 @@ body {
   align-items: flex-start;
   gap: 1rem;
   margin-bottom: 1.5rem;
-  flex: 1 1 calc(33% - 2rem); /* Three items per row on large screens */
+  flex: 1 1 calc(33% - 2rem);
 }
 .why-us .why-us-container .why-us-features li .icon {
   font-size: 24px;
@@ -605,22 +603,28 @@ body {
 @media (min-width: 1000px) {
   .why-us .why-us-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two columns: image + content */
+    grid-template-columns: 1fr 1fr;
     align-items: start;
     gap: 2rem;
   }
   .why-us .why-us-container .why-us-image {
-    margin-bottom: 0; /* Remove bottom margin for grid alignment */
+    margin-bottom: 0;
   }
   .why-us .why-us-features {
-    gap: 2rem;
+    gap: 1rem;
     margin-top: 2rem;
   }
   .why-us .why-us-features li {
-    flex: 1 1 30%; /* Three items per row on large screens */
+    flex: 1 1 30%;
   }
 }
 
+@media (max-width: 576px) {
+  .why-us-features {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .contact-section {
   font-family: "Poppins", sans-serif;
 }
