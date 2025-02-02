@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <img
+          src="./images/Zrzut_ekranu_2025-01-31_o_22.45.30-removebg-preview (1).png"
+          alt="Logo"
+          class="navbar-logo"
+        />
+        <button class="navbar-toggler" aria-label="Toggle navigation">
+          <span class="navbar-icon"></span>
+          <span class="navbar-icon"></span>
+          <span class="navbar-icon"></span>
+        </button>
+        <ul class="navbar-menu">
+          <li><a href="#aboutus" class="navbar-link">Kim jesteśmy?</a></li>
+          <li><a href="#offer" class="navbar-link">Oferta</a></li>
+          <li><a href="#contact" class="navbar-link">Kontakt</a></li>
+        </ul>
+        <div class="navbar-info">
+          <div class="info-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>726-860-679</span>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>21-150 Poizdów-Kolonia 14</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="header">
+      <div class="header-info">
+        <h1 class="header__text">Zwiększ moc pojazdu</h1>
+        <p class="header__desc">
+          Specjalizujemy się w modyfikacji oprogramowania sterowników,
+          zwiększając moc i moment obrotowy w samochodach osobowych, ciężarowych
+          oraz maszynach rolniczych. Oferujemy również usługi mechaniczne,
+          wulkanizację oraz serwis klimatyzacji.
+        </p>
+        <button class="header__button" id="scrollToOffer">
+          Sprawdź naszą ofertę
+        </button>
+      </div>
+    </div>
+
+    <section class="container">
+      <h3 class="aboutus" id="aboutus">Kim jesteśmy?</h3>
+
+      <h2 class="aboutus-text">Profesjonalna obsługa twojego pojazdu</h2>
+      <div class="aboutus-icons">
+        <span class="icon"></span>
+        <span class="icon"></span>
+        <span class="icon"></span>
+        <span class="icon"></span>
+        <span class="icon"></span>
+      </div>
+      <p class="aboutus-dsc">
+        Oferujemy kompleksowe usługi modyfikacji silników, elektroniki oraz
+        tradycyjną mechanikę samochodową. Twoje auto zasługuje na najlepszą
+        opiekę – od zwiększenia mocy po serwis klimatyzacji.
+      </p>
+
+      <button class="aboutus-btn contact-button">Kontakt</button>
+
+      <div class="aboutus-info">
+        <i class="fa-solid fa-car-side"></i>
+        <p>
+          Naszym celem jest dostarczenie usług najwyższej jakości, które
+          przekraczają oczekiwania klientów.
+        </p>
+      </div>
+      <div class="aboutus-images-container">
+        <img src="./images/bmwinside.jpg" alt="Car 1" class="aboutus-image1" />
+        <img
+          src="./images/budowa-i-parametry-felg-stalowych-i-aluminiowych-109391-max copy.jpg"
+          alt="Car 2"
+          class="aboutus-image1"
+        />
+      </div>
+    </section>
+
+    <div class="stats">
+      <div class="stats-item">
+        <div class="stats-number" data-target="40">0</div>
+        <div class="divider"></div>
+        <div class="stats-text">Zrealizowanych projektów</div>
+      </div>
+      <div class="stats-item">
+        <div class="stats-number" data-target="23">0</div>
+        <div class="divider"></div>
+        <div class="stats-text">Partner korporacyjny</div>
+      </div>
+      <div class="stats-item">
+        <div class="stats-number" data-target="17">0</div>
+
+        <div class="divider"></div>
+        <div class="stats-text">Detalowanie samochodu</div>
+      </div>
+      <div class="stats-item">
+        <div class="stats-number" data-target="40">0</div>
+        <div class="divider"></div>
+        <div class="stats-text">Nasze usługi</div>
+      </div>
+    </div>
+
+    <div class="offertContainer">
+      <p class="offertContainer-text" id="offer">Oferta</p>
+      <p class="offertContainer-dsc">Nasze usługi</p>
+      <button class="offertContainer-btn contact-button">
+        Dane Kontaktowe
+      </button>
+    </div>
+
+    <div class="cards-container" id="offer">
+      <div class="card">
+        <img
+          src="./images/codding.jpg"
+          alt="Modyfikacja oprogramowania"
+          class="card-image"
+        />
+        <div class="card-content">
+          <h3 class="card-title">Modyfikacja oprogramowania</h3>
+          <p class="card-text">
+            Podnosimy moc i moment obrotowy w samochodach osobowych, ciężarowych
+            oraz maszynach rolniczych.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="./images/carcodding.png"
+          alt="Diagnostyka pojazdów"
+          class="card-image"
+        />
+        <div class="card-content">
+          <h3 class="card-title">Wyprogramowanie komponentów</h3>
+          <p class="card-text">
+            Usuwamy elektronicznie DPF, EGR, AdBlue oraz inne ograniczenia w
+            pojazdach.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="./images/repair.jpg"
+          alt="Serwis klimatyzacji"
+          class="card-image"
+        />
+        <div class="card-content">
+          <h3 class="card-title">Mechanika samochodowa</h3>
+          <p class="card-text">
+            Kompleksowe naprawy mechaniczne dla Twojego auta.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="./images/vulcanization.jpg"
+          alt="Naprawy mechaniczne"
+          class="card-image"
+        />
+        <div class="card-content">
+          <h3 class="card-title">Wulkanizacja</h3>
+          <p class="card-text">
+            Profesjonalna wymiana opon, naprawy oraz sezonowa obsługa.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="./images/serwis-klimatyzacji-770x443.jpg"
+          alt="Wulkanizacja"
+          class="card-image"
+        />
+        <div class="card-content">
+          <h3 class="card-title">Serwis klimatyzacji</h3>
+          <p class="card-text">
+            Naprawy, uzupełnianie czynnika oraz pełna diagnostyka klimatyzacji.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          src="./images/gearbox.jpg"
+          alt="Konserwacja pojazdów"
+          class="card-image"
+        />
+        <div class="card-content">
+          <h3 class="card-title">Kodowanie i elektronika</h3>
+          <p class="card-text">
+            Kodowanie kluczy, Immo off, naprawa sterowników oraz Crash airbag.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-section">
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <h1 class="hero-title">Dostosuj swoje auto do perfekcji</h1>
+          <p class="hero-description">
+            Specjalizujemy się w modyfikacjach, które podnoszą osiągi pojazdu i
+            eliminują ograniczenia. Zaufaj naszemu doświadczeniu w mechanice i
+            elektronice samochodowej.
+          </p>
+          <button class="hero-button contact-button">Dowiedz się więcej</button>
+        </div>
+      </div>
+    </div>
+    <section class="why-us">
+      <div class="why-us-container">
+        <!-- Image Section -->
+        <img
+          src="./images/car-repair-maintenance-theme-mechanic-uniform-working-auto-service.jpg"
+          alt="Detailing samochodu"
+          class="why-us-image"
+        />
+
+        <!-- Content Section -->
+        <div class="why-us-content">
+          <h3 class="why-us-title">DLACZEGO MY?</h3>
+          <h2 class="why-us-subtitle">
+            Zaufaj profesjonalistom od modyfikacji i serwisu pojazdów.
+          </h2>
+          <p class="why-us-desc">
+            Zapewniamy kompleksową obsługę samochodów, od modyfikacji silnika po
+            serwis klimatyzacji. Nasze doświadczenie i dbałość o szczegóły
+            gwarantują najwyższą jakość usług.
+          </p>
+          <ul class="why-us-features">
+            <li>
+              <div class="icon">➔</div>
+              <div>
+                <h4>Dbałość o szczegóły</h4>
+                <p>
+                  Każdy pojazd traktujemy indywidualnie, zwracając uwagę na
+                  najmniejsze detale.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">➔</div>
+              <div>
+                <h4>Zaawansowane rozwiązania</h4>
+                <p>
+                  Specjalizujemy się w nowoczesnych technologiach modyfikacji i
+                  serwisu.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">➔</div>
+              <div>
+                <h4>Profesjonalna obsługa</h4>
+                <p>
+                  Nasz zespół to wykwalifikowani specjaliści z doświadczeniem w
+                  branży.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">➔</div>
+              <div>
+                <h4>Standardy jakości</h4>
+                <p>
+                  Każda usługa wykonywana jest zgodnie z najwyższymi
+                  standardami.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">➔</div>
+              <div>
+                <h4>Szybka rezerwacja</h4>
+                <p>
+                  Skontaktuj się z nami, aby umówić wizytę w dogodnym terminie.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="icon">➔</div>
+              <div>
+                <h4>Gwarancja efektów</h4>
+                <p>
+                  Zapewniamy widoczne rezultaty, które spełnią Twoje
+                  oczekiwania.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="contact-section">
+      <div class="contact-banner" id="contact">
+        <h2>Gotowy, aby zadbać o swoje auto?</h2>
+        <button class="contact-btn contact-button">Dane kontaktowe</button>
+      </div>
+
+      <div class="contact-info">
+        <div class="contact-logo">
+          <img
+            src="./images/Zrzut_ekranu_2025-01-31_o_22.45.30-removebg-preview (1).png"
+            alt="Logo"
+            class="contact-logo"
+          />
+        </div>
+        <p>
+          Profesjonalne usługi dla Twojego pojazdu – mechanika, modyfikacje
+          silnika, wulkanizacja i serwis klimatyzacji.
+        </p>
+        <ul class="contact-details">
+          <li>
+            <i class="fa-solid fa-location-dot"></i> Poizdów Kolonia 14, 21-150
+            Polska
+          </li>
+          <li><i class="fa-solid fa-envelope"></i> daniel.simic@o2.pl</li>
+          <li><i class="fa-solid fa-phone"></i> +48 726-860-679</li>
+        </ul>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/885de26243.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

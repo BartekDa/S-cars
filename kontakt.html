@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="./scss/contact.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <img
+          src="./images/Zrzut_ekranu_2025-01-31_o_22.45.30-removebg-preview (1).png"
+          alt="Logo"
+          class="navbar-logo"
+        />
+        <button class="navbar-toggler" aria-label="Toggle navigation">
+          <span class="navbar-icon"></span>
+          <span class="navbar-icon"></span>
+          <span class="navbar-icon"></span>
+        </button>
+        <ul class="navbar-menu">
+          <li><a href="#aboutus" class="navbar-link">Kim jesteśmy?</a></li>
+          <li><a href="#offer" class="navbar-link">Oferta</a></li>
+          <li><a href="#contact" class="navbar-link">Kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Nagłówek kontaktu -->
+    <section class="contact-header">
+      <div class="header-overlay">
+        <h1>Kontakt</h1>
+        <nav class="breadcrumb">
+          <a href="index.html">Home</a>
+          <span>&gt;</span>
+          <span>Kontakt</span>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Sekcja kontaktowa -->
+    <section class="contact-container">
+      <!-- Informacje kontaktowe -->
+      <div class="contact-info">
+        <h2>Skontaktuj się z nami</h2>
+        <p>
+          Masz pytania dotyczące naszych usług? Skontaktuj się z nami, a z
+          przyjemnością odpowiemy na wszystkie Twoje wątpliwości.
+        </p>
+        <ul class="contact-details">
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <div><strong>Adres:</strong> Poizdów Kolonia 14, 21-150 Polska</div>
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <div><strong>Email:</strong> daniel.simic@o2.pl</div>
+          </li>
+          <li>
+            <i class="fas fa-phone"></i>
+            <div><strong>Telefon:</strong> +48 726-860-679</div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Formularz kontaktowy -->
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Imię" required />
+        <input type="text" name="phone" placeholder="Telefon" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <input type="text" name="subject" placeholder="Temat" required />
+        <textarea
+          name="message"
+          placeholder="Wiadomość"
+          rows="5"
+          required
+        ></textarea>
+        <button type="submit">Wyślij zapytanie</button>
+      </form>
+    </section>
+
+    <!-- Informacje o firmie -->
+    <section class="company-info">
+      <div class="company-logo">
+        <img
+          src="./images/Zrzut_ekranu_2025-01-31_o_22.45.30-removebg-preview (1).png"
+          alt="Logo"
+        />
+      </div>
+      <p>
+        Profesjonalne usługi dla Twojego pojazdu – mechanika, modyfikacje
+        silnika, wulkanizacja i serwis klimatyzacji.
+      </p>
+      <ul class="contact-details">
+        <li>
+          <i class="fa-solid fa-location-dot"></i> Poizdów Kolonia 14, 21-150
+          Polska
+        </li>
+        <li><i class="fa-solid fa-envelope"></i> daniel.simic@o2.pl</li>
+        <li><i class="fa-solid fa-phone"></i> +48 726-860-679</li>
+      </ul>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </section>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="./contact.js"></script>
+  </body>
+</html>

@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  animation: fadeInPage 1s ease-out forwards;
+}
+
+.navbar {
+  background-color: rgb(10, 10, 10);
+  color: #fff;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .navbar-logo {
+    height: 50px;
+    max-width: 100px;
+  }
+
+  .navbar-toggler {
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+
+    .navbar-icon {
+      width: 25px;
+      height: 3px;
+      background-color: #fff;
+      border-radius: 2px;
+      transition: background-color 0.3s ease;
+    }
+
+    &:hover .navbar-icon {
+      background-color: #ffd226;
+    }
+  }
+
+  .navbar-menu {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+
+    .navbar-link {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #ffd226;
+      }
+    }
+
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+
+  .navbar-menu.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-toggler {
+    display: flex;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: rgb(10, 10, 10);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+
+    .navbar-link {
+      padding: 0.5rem 1rem;
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .navbar-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    position: static;
+    background-color: transparent;
+  }
+
+  .navbar-toggler {
+    display: none;
+  }
+}
+// Nagłówek kontaktu
+.contact-header {
+  background: url("../images/car.jpg") center/cover no-repeat;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeInUp 1s ease-out forwards;
+  .header-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+
+    h1 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+    }
+
+    .breadcrumb {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+
+      a {
+        color: #ffd226;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      span {
+        color: #fff;
+      }
+    }
+  }
+}
+
+// Kontener kontaktu
+.contact-container {
+  display: flex;
+  flex-direction: column; // Elementy jedno pod drugim
+  padding: 2rem;
+  gap: 2rem;
+  animation: fadeInUp 1s ease-out forwards;
+  .contact-info {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      color: #555;
+    }
+
+    .contact-details {
+      list-style: none;
+      padding: 0;
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+
+        i {
+          font-size: 1.5rem;
+          color: #ffd226;
+        }
+
+        div {
+          font-size: 1rem;
+
+          strong {
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    input,
+    textarea {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+
+      &:focus {
+        border-color: #ffd226;
+      }
+    }
+
+    button {
+      width: 100%;
+      padding: 0.8rem;
+      background: #ffd226;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+
+      &:hover {
+        background: #e6b022;
+      }
+    }
+  }
+}
+
+// Informacje o firmie
+.company-info {
+  background: #333;
+  color: #fff;
+  text-align: start;
+  padding: 2rem;
+  margin-top: 2rem;
+
+  .company-logo img {
+    width: 150px;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+    color: #ccc;
+  }
+
+  .contact-details {
+    list-style: none;
+    margin-bottom: 2rem;
+
+    li {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+
+      i {
+        color: #ffd226;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  .social-icons a {
+    color: #ffd226;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animacja dla ikon */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes fadeInPage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
