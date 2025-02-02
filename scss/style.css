@@ -142,7 +142,7 @@ body {
 }
 .header {
   position: relative; /* Aby pseudo-element odnosił się do kontenera */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/car.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("./images/car.jpg");
   background-position: center;
   background-size: cover;
   width: 100%;
