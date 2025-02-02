@@ -39,7 +39,7 @@ body {
   background: none;
   border: none;
   cursor: pointer;
-  display: none; /* Domyślnie ukryte na większych ekranach */
+  display: none;
   flex-direction: column;
   gap: 5px;
 }
@@ -90,7 +90,6 @@ body {
   margin-right: 0.5rem;
 }
 
-/* Małe ekrany (poniżej 768px) */
 @media (max-width: 768px) {
   .navbar {
     width: 100%;
@@ -121,7 +120,6 @@ body {
     display: none;
   }
 }
-/* Duże ekrany (769px i więcej) */
 @media (min-width: 769px) {
   .navbar-menu {
     display: flex;
@@ -140,8 +138,21 @@ body {
     display: flex;
   }
 }
+@media (min-width: 1200px) {
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-menu {
+    margin-left: auto; /* Przesunięcie na prawo */
+  }
+  .navbar-info {
+    margin-left: 2rem;
+  }
+}
 .header {
-  position: relative; /* Aby pseudo-element odnosił się do kontenera */
+  position: relative;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/images/car.jpg");
   background-position: center;
   background-size: cover;
@@ -151,7 +162,6 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   z-index: 2;
-  /* ✅ Zmiany dla dużych ekranów */
 }
 .header .header-info {
   display: flex;
@@ -161,7 +171,7 @@ body {
   padding: 2em;
   max-width: 1200px;
   text-align: left;
-  z-index: 2; /* Treść będzie nad pseudo-elementem `::before` */
+  z-index: 2;
   animation: fadeInLeft 1s ease-out forwards;
 }
 .header .header-info .header__text {
